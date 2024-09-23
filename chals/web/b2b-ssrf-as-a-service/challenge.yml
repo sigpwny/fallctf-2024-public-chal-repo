@@ -1,0 +1,27 @@
+name: "B2B SSRFaaS"
+author: Pete
+category: Web
+description: |-
+  SUPERMEGACORP has launched yet another incredible product, B2B SSRF as a service.
+  The marketing team still doesn't really understand why it was called that, but they ran out of money to pay any developers, so they can't complain about it to them.
+  We used our unpaid senior dev to rework SSRFaaS to target this untapped market and push it directly to prod.
+
+  https://ssrf-as-a-service.chal.fallctf.com
+
+  **Note**: This challenge has an unintended solve.
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{b2bssrfaas_1s_th3_n3w_ssrfaas}
+hints:
+  - Is there a way to view more than the HTML?
+  - '[Alternative solution] is there a way to view local files?'
+files: []

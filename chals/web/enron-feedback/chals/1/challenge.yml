@@ -1,0 +1,28 @@
+name: "Enron Feedback 1"
+author: Jake
+category: Web
+description: |-
+  Enron's accounting department is very interested in the public's feedback (not really.) When you submit your feedback an admin will dutifully review your feedback.
+
+  I think if you confuse the admin by sending an `alert`, they might be convinced into embezzling some money for you.
+
+  **Tip**: All of the flags are prefixed with the corresponding challenge number (e.g., `fallctf{1_flag}`)
+
+  Check out our [Web Hacking II](https://sigpwny.com/meetings/general/2024-09-15/) meeting for some useful info!
+
+  https://enron-feedback.chal.fallctf.com/
+
+  **author**: Jake
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+hints:
+  - "Huh, that's weird, I can use <b>bold text</b> in my feedback."
+flags:
+  - fallctf{1_abs0lute1y_b4mboozl3d}
+  

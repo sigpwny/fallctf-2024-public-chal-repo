@@ -1,0 +1,22 @@
+name: "Buried in the Sand"
+author: Pete
+category: Rev
+description: |-
+  Someone buried a flag in the sand. Can you find it?
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{strings_is_a_great_shovel}
+hints:
+  - "It's hard to `cat` out a binary file, how else can you view ascii text in it?"
+  - "Is there another tool that lets you see the strings in a file?"
+files:
+  - ./buried

@@ -1,0 +1,27 @@
+name: "SUPERMEGACORP - Day 1"
+author: Pete
+category: Rev
+description: |-
+  You switched jobs to a sub-sub-sub-contractor for SUPERMEGACORP.
+  Your first task is to download and install Ghidra. Unfortunately, your mentor works on a seperate floor and doesn't bother helping the newbies.
+
+  Once installed, go to Help > User Agreement. Find the 3 words after "Ghidra is designed to facilitate".
+
+  Input the flag as "fallctf{word1_word2_word3}". E.g. "I love SaaS" would become fallctf{i_love_saas} (all lowercase).
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{lawful_sre_activities}
+
+hints:
+  - Install Java from Oracle's website.
+  - Install Ghidra from https://github.com/NationalSecurityAgency/ghidra/releases.
+files: []

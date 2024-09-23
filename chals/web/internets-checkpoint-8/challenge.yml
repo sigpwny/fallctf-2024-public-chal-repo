@@ -1,0 +1,30 @@
+name: "Internet's Checkpoint 8"
+author: Eddy
+category: Web
+description: |-
+  I've stumbled upon the internet's checkpoint, and it's telling me that if I take a break it will reward me with a flag. However, I have the attention span of a goldfish and want to get back to watching my skibidi rizz brainrot videos on TikTok.
+
+  Can you dig around on the website's source code to find a way to get me the final flag before my patience runs out, while also discovering the other flags along the way?
+
+  **Tip**: All of the flags are prefixed with the corresponding challenge number (e.g., `fallctf{1_flag}`)
+
+  Check out our [Web Hacking I](https://sigpwny.com/meetings/general/2024-09-12/) meeting for some useful info!
+
+  https://internets-checkpoint.chal.fallctf.com/
+  
+  **author**: Eddy
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+hints:
+  - Please don't actually refresh the webpage 10,000 times. This is common sense.
+  - How do web browsers keep track of user data across page refreshes and reconnects?
+  - My favorite ones are chocolate chip
+  - Check under the Application header of the developer tool menu (expand the menu options with the >> button)
+flags:
+  - fallctf{8_p4Ti3nce_1nC4Rnat3}

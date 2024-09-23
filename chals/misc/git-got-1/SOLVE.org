@@ -1,0 +1,101 @@
+* Modmail guide
+The only tool needed for this challenge is (a not ancient version of) Git; *npm is not part of the challenge.*
+
+Nudge people in these directions:
+- "Have you checked ~man git~ or the [[https://git-scm.com/docs/git#_git_commands][online Git docs]]?"
+- "How does Git store content?" ([[https://git-scm.com/book/en/v2/Git-Internals-Git-Objects][Git Objects]])
+- "Are there other ways to store metadata besides commit messages?"
+- "How can you list and traverse commits?"
+
+* Challenge setup
+#+begin_src shell :exec no
+export GIT_COMMITTER_DATE="Sun Sep 22 04:05:38 2024 -0500" # change this every commit
+export GIT_COMMITTER_NAME="Benedict Hartman"
+export GIT_COMMITTER_EMAIL="benny@kernel.org"
+
+git commit --author="$GIT_COMMITTER_NAME <$GIT_COMMITTER_EMAIL>" --date="$GIT_COMMITTER_DATE"
+git notes add --author="$GIT_COMMITTER_NAME <$GIT_COMMITTER_EMAIL>" --date="$GIT_COMMITTER_DATE" HEAD
+#+end_src
+
+* Solves
+** Note
+Git notes are a way of attaching additional metadata to commits without altering the commit objects themselves.
+
+The commit the note points to was scrubbed from the repo using ~git reflog delete~, so most tools probably will not show the note.
+But the file =.git/refs/notes/commits= lists the SHAs for all the git note commits:
+#+begin_src shell :exec no
+$ cat .git/refs/notes/commits
+3235db2c5f96f6c50ac0af2d3c06f03a78fc21a8
+$ git show 3235db2c5f96f6c50ac0af2d3c06f03a78fc21a8
+commit 3235db2c5f96f6c50ac0af2d3c06f03a78fc21a8
+Author: Benedict Hartman <benny@kernel.org>
+Date:   Sun Sep 22 10:29:09 2024 -0500
+
+    Notes added by 'git notes add'
+
+diff --git a/b96d54bc8834cbbe41b9c7f84e2b1470219422db b/b96d54bc8834cbbe41b9c7f84e2b1470219422db
+new file mode 100644
+index 0000000..e3a4a71
+--- /dev/null
++++ b/b96d54bc8834cbbe41b9c7f84e2b1470219422db
+@@ -0,0 +1 @@
++Putting the flag here so I don't forget: fallctf{g1t_n073d}
+#+end_src
+
+Flag: =fallctf{g1t_n073d}=
+
+** Reflog
+Checking the Git ref log is a handy way to find unreachable commits in your repository (super useful for when you mess up something with Git).
+#+begin_src shell :exec no
+$ git reflog
+c76cf33 (HEAD -> main) HEAD@{0}: reset: moving to HEAD^
+c76cf33 (HEAD -> main) HEAD@{1}: commit: update README.md
+e8d3964 HEAD@{2}: reset: moving to HEAD^
+5e2c57d HEAD@{3}: commit: dummy commit to test environment variables
+e8d3964 HEAD@{4}: commit (initial): initial commit
+$ git show HEAD@{3}
+commit 5e2c57d0e3a5c6f9e16714939c6b9fb6f66b8731
+Author: Benedict Hartman <benny@kernel.org>
+Date:   Fri Aug 23 10:31:00 2024 -0500
+
+    dummy commit to test environment variables
+
+diff --git a/.env b/.env
+new file mode 100644
+index 0000000..15da14a
+--- /dev/null
++++ b/.env
+@@ -0,0 +1 @@
++PASSWORD_TO_PROD_SERVER=fallctf{r3fl06_my_b3l0v3d}
+\ No newline at end of file
+diff --git a/src/App.js b/src/App.js
+index 3784575..290bf01 100644
+--- a/src/App.js
++++ b/src/App.js
+@@ -6,8 +6,9 @@ function App() {
+     <div className="App">
+       <header className="App-header">
+         <img src={logo} className="App-logo" alt="logo" />
++        // REMOVE THIS LATER
+         <p>
+-          Edit <code>src/App.js</code> and save to reload.
++          Testing to make sure environment variables work: {process.env.PASSWORD_TO_PROD_SERVER}
+         </p>
+         <a
+           className="App-link"
+#+end_src
+
+Flag: =fallctf{r3fl06_my_b3l0v3d}=
+
+** Hooks
+Git hooks are a method for executing scripts on certain actions, like before committing, before pushing, after applying a patch, etc.
+They're not used very often, but can be quite useful for running code formatters or checking that your commits don't contain secrets.
+
+To prevent just grepping for the flag, this challenge is mostly forensics: the only enabled hook is =.git/hooks/push-to-checkout=, and it contains a "healthcheck" for the URL https://bennys-personal-site.pages.dev.
+Navigating to this page yields the flag.
+#+begin_src shell :exec no
+$ curl https://bennys-personal-site.pages.dev
+fallctf{h00k_l1n3_4nd_51nk3r}
+#+end_src
+
+Flag: =fallctf{h00k_l1n3_4nd_51nk3r}=

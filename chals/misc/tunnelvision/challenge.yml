@@ -1,0 +1,24 @@
+name: TunnelVision
+author: Sagnik
+category: Misc
+description: |-
+  We've been here for hours, but I think I finally see a light. Am I dreaming?
+
+  You might wanna check out [wireshark](https://www.wireshark.org)
+
+  **author**: Sagnik
+value: 500
+type: dynamic
+hints:
+  - You see the tunnel widen, as something enters the light. It starts with `GET /index.html HTTP/1.1`, and it seems to carry some cookies. Maybe you should **follow** it?
+  - Maybe you don't understand the secrets of the [tunnel](https://www.paloaltonetworks.com/cyberpedia/what-is-dns-tunneling)?
+extra:
+  initial: 500
+  decay: 100
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{l1ght_@_7he_3nd_0f_th3_dN5_tunn3l}
+files:
+  - tunnels.pcapng

@@ -1,0 +1,24 @@
+name: "The Professor's Request"
+author: alyssaflores959
+category: OSINT
+description: |-
+  The Pokémon Professor lost their research notes and needs your help identifying a mysterious Pokémon. Can you assist the Professor and uncover the name of this Pokémon?
+  
+  Flag format: fallctf{Pokémon Name}
+  ex: fallctf{Piplup}
+
+  **author**: alyssaflores959
+value: 500
+type: dynamic
+hints:
+  - Use the Pokédex to find similar Pokémons to Vaporean that match the Professor's description.
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{Sylveon}
+files:
+  - professors_tweet.png

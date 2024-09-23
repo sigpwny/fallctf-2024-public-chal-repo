@@ -1,0 +1,34 @@
+name: "intersection, japan"
+author: Henry
+category: OSINT
+description: |-
+  <img src="https://i.kym-cdn.com/photos/images/newsfeed/002/018/640/c6e.jpg" alt="place, japan">
+
+  Even intersections in Japan look nice. Can you find where I was standing when I took this photo?
+  
+  To avoid confusion about road names, there is a white label directly on top of the location with Google Maps. These white labels can be seen directly on top of large intersections.
+
+  flag format: fallctf{name of the intersection from Google Maps in English, city}
+  
+  example: fallctf{Nishinippori 5, Tokyo}
+  
+  If you go to Nishinippori 5 on Google Maps, click "close" and zoom out a little bit, you should be able to see the label.
+
+
+  **author**: Henry
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+
+tags:
+  - hard
+flags:
+  - fallctf{Aoki-dori, Yokohama}
+  - fallctf{Aoki dori, Yokohama}
+
+files:
+  - chal.jpg

@@ -1,0 +1,30 @@
+name: "Middle School Encoder"
+author: Peter
+category: Crypto
+description: |-
+  I told my 13-year old self to create an uncrackable encryption scheme. I think he did a pretty good job. Can you break it?
+
+  ```
+  ╰─❯ git log encode
+  commit 5292436981ba4dd3342e89648929c433573acb9d
+  Author: Peter Stenger
+  Date:   Tue Dec 13 09:20:21 2016 -0500
+  ```
+  **Note**:
+  Due to unforeseen usage, the original program didn't support the full range of ASCII characters. Please replace the word 'underscore' with the character '_', etc.
+  **author**: Pete
+value: 500
+type: dynamic
+tags: 
+  - medium
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{the_indomitable_human_spirit}
+files:
+  - run.txt
+  - encode
+hints:
+  - Maybe the encryption routine is reversible?

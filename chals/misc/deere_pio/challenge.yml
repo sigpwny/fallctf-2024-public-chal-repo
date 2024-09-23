@@ -1,0 +1,18 @@
+name: "Badge 2 - PIO Machine"
+author: Richard
+category: Misc
+description: |-
+  Can you reverse the *other* hidden flag in the Deere Game?
+
+  See: https://tutoduino.fr/en/pio-rp2040-en/
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - extreme
+flags:
+  - sigpwny{th3_pio_1s_4w3s0m3}

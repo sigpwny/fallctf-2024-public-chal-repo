@@ -1,0 +1,28 @@
+name: "Bug Bounty 2"
+author: Akhil
+category: Pwn
+description: |-
+  We've got it this time! Not one, but TWO unpaid staff engineers at SUPERMEGACORP cooked this one up so now there's definitely no way it's vulnerable.
+
+  SUPERMEGACORP is so confident in this one that they've doubled the bug bounty to $1000! 
+
+  `nc chal.fallctf.com 5003`
+
+  **author**: Akhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{double_the_engineers_double_the_bugs}
+hints:
+  - Pay close attention to the stack visualization. Do you notice something about how the bytes are ordered in memory for `number`?
+  - The pwntools function `p64()` might be useful.
+files:
+  - challenge.c
+  - challenge
+  - Makefile

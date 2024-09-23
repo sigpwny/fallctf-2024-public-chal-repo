@@ -1,0 +1,39 @@
+name: "swiss transport"
+author: Pete
+category: OSINT
+description: |-
+  I forgot the name to my favorite swiss train station :(
+
+  All I remember are these highly specific facts about it (lucky you!):
+
+  - it was located in the city of Zürich
+  - it was within 500 meters of a mountain peak
+  - the train station is at an elevation of more than 750 meters.
+
+  If only there was [a tool](https://overpass-turbo.eu) that could query for stuff like this...
+
+  Provide the name of the station wrapped in the flag format, all lowercase, with spaces replaced with underscores.
+
+  For example, fallctf{times_square}
+
+  **author**: Pete
+value: 500
+type: dynamic
+hints:
+  - In overpass turbo, you can name an area with `area[name=XXX]->.city`
+  - You can filter for nodes in an named area with `node(area.city)->.nodes`
+  - You can use the `around` keyword to chain together queries
+  - You can use the `(if:number(t["field"])??XXX)` modifier to query on numeric properties
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+
+tags:
+  - hard
+flags:
+  - fallctf{Uetliberg}
+  - fallctf{uetliberg}
+  - fallctf{UEBE}
+
+files: []

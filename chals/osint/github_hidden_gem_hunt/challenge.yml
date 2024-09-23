@@ -1,0 +1,35 @@
+name: "GitHub's Hidden Gem Hunt"
+author: japjeevkaur, kalrakhushi
+category: OSINT
+description: |- 
+  A highly secretive GitHub user, identified only by their user ID, has managed to conceal a repository of immense significance. 
+  Despite being hidden from public view, this ultra-exclusive repository has garnered over 5000 stars. 
+  Your task is to uncover the mystery behind the username linked to this user ID, locate the elusive repository, and decode the flag from its details.
+
+  An anonymous source has revealed that the user ID of this enigmatic figure is **583231**. Can you trace their digital footsteps and uncover their hidden gem?
+
+  Flag format: fallctf{repository_name-creation_date}
+  ex: fallctf{MyRepo-2024-09-22}
+
+  **author**: japjeevkaur, kalrakhushi
+value: 500
+type: dynamic
+hints:
+- |-
+  A user's identity isn't always immediately visible, but there's an API that can translate a number into a name. 
+  Dig into the documentation for user profile details using the provided key. 
+  
+  https://api.github.com/
+  
+- Once you have the name, explore the repository listings through another API call. 
+
+
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{Spoon-Knife-2011-01-27}
+files: []

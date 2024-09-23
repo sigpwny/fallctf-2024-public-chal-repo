@@ -1,0 +1,28 @@
+name: "Internet's Checkpoint 5"
+author: Eddy
+category: Web
+description: |-
+  I've stumbled upon the internet's checkpoint, and it's telling me that if I take a break it will reward me with a flag. However, I have the attention span of a goldfish and want to get back to watching my skibidi rizz brainrot videos on TikTok.
+
+  Can you dig around on the website's source code to find a way to get me the final flag before my patience runs out, while also discovering the other flags along the way?
+
+  **Tip**: All of the flags are prefixed with the corresponding challenge number (e.g., `fallctf{1_flag}`)
+
+  Check out our [Web Hacking I](https://sigpwny.com/meetings/general/2024-09-12/) meeting for some useful info!
+
+  https://internets-checkpoint.chal.fallctf.com/
+  
+  **author**: Eddy
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+hints:
+  - You have likely already encountered the mess that is the code used to output this flag
+  - You don't need to translate the symbols to plaintext JS - your browser can already do that. How do you get it to run the code though?
+flags:
+  - fallctf{5_tH3_SYmb01s_WH4t_d0_th3Y_M34n}

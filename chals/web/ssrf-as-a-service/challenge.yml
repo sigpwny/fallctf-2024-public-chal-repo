@@ -1,0 +1,28 @@
+name: "SSRFaaS"
+author: Pete
+category: Web
+description: |-
+  SUPERMEGACORP has launched yet another incredible product, SSRF as a service.
+  The marketing team doesn't really understand why it was called that, but apparently software engineers are big fans.
+  We used our unpaid intern to cook this up and push it directly to prod.
+
+  https://ssrf-as-a-service.chal.fallctf.com
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{ssrfaas_is_the_new_genai}
+hints:
+  - Is there an internal service you can access using this tool that isn't normally accessible to the internet?
+  - What ip is a service running on if it's only accessible to your machine?
+files:
+  - static/index.html
+  - main-release.py
+  - startup.sh

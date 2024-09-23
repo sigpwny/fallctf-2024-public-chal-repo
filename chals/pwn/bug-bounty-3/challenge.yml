@@ -1,0 +1,29 @@
+name: "Bug Bounty 3"
+author: Akhil
+category: Pwn
+description: |-
+  Less code means less bugs, right? We removed some unnecessary function calls, so it's impossible to print the flag now!
+
+  This is SUPERMEGACORP's highest bug bounty yet, at $5000!
+
+  `nc chal.fallctf.com 5004`
+
+  **author**: Akhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{return_to_the_basics}
+hints:
+  - What is a return address? Can you overwrite it somehow?
+  - You can find the address of the `print_flag` function using `gdb` or `objdump`.
+  - You can run `i addr print_flag` in `gdb` or `objdump -d challenge | grep "print_flag"`
+files:
+  - challenge.c
+  - challenge
+  - Makefile

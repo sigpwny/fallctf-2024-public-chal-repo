@@ -1,0 +1,23 @@
+name: "SUPERMEGACORP - Day 3"
+author: Pete
+category: Rev
+description: |-
+  Your mentor realized that you might be a little smarter than the average SUPERMEGACORP sub-sub-sub contractor intern. He decided to give you a harder task.
+  Find the hidden flag.
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{610_jellybean_jira_ticket}
+hints:
+  - How does the comparison use seq1, seq2, seq3?
+  - What is the access pattern for seq1, seq2, seq3 in the loop?
+files:
+  - ./third_day

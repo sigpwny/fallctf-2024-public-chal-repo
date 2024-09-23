@@ -1,0 +1,18 @@
+name: "Talk to People"
+author: SIGPwny
+category: Welcome
+description: |-
+  Meet with your peers and helpers to get a flag!
+  **author**: SIGPwny
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{sigpwny_says_hi!!!}
+hints: []
+files: []

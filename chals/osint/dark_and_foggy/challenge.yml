@@ -1,0 +1,28 @@
+name: "Dark and Foggy"
+author: rbowdarsh
+category: OSINT
+description: |-
+  It was a dark and foggy night... I hid a secret message somewhere on campus, but I can't remember where I hid it or what the message was for that matter.
+  My only clue is this photo. Can you help me find my secret message?
+  
+  Flag format: fallctf{Street Name, Secret Message}
+  ex: fallctf{W Springfield Ave, where_am_i}
+
+  **author**: rbowdarsh
+value: 500
+type: dynamic
+hints:
+  - How can you extract image data?
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{S Gregory St, the_fog_is_coming}
+  - fallctf{S Gregory Street, the_fog_is_coming}
+  - fallctf{South Gregory St, the_fog_is_coming}
+  - fallctf{South Gregory Street, the_fog_is_coming}
+files:
+  - dark_and_foggy.jpg

@@ -1,0 +1,29 @@
+name: "Path to Success"
+author: Louis
+category: Web
+description: |-
+  My cat hid an image of the flag at the path "/flag.png". Can you find it?
+
+  https://path-to-success.chal.fallctf.com
+
+  **author**: Louis
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{paths_to_success_are_paved_by_cats!!!}
+hints:
+  - Try viewing a cat image in a new tab and changing the image name to a random cat image file that doesn't exist (like cat11.jpg).
+  - What does a double dot (..) in a path mean (Google!)? Could we use this to our advantage since we know the flag image is located in the root folder?
+  - The website provides a clear picture of what the relevant file paths are!
+  - This is called a path traversal vulnerability.
+files:
+  - challenge/app.py
+  - challenge/Dockerfile
+  - challenge/requirements.txt
+  - challenge/compose.yml

@@ -1,0 +1,1 @@
+In Google Lens, it literally tells you that this river is Kamo River. The handrail of the bridge is unique enough such that it can be immediately identified. Also, not that many bridges are on this river.

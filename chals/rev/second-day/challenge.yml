@@ -1,0 +1,22 @@
+name: "SUPERMEGACORP - Day 2"
+author: Pete
+category: Rev
+description: |-
+  As your company is a sub-sub-sub contractor, your timetable, as your mentor explained, is "relaxed".
+  Your summer internship project is to make sure that the program that the sub-sub-sub-sub-contractor made isn't leaking any secret flags.
+  Good thing you have Ghidra installed!
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{flag_printer_3000}
+
+files:
+  - second_day

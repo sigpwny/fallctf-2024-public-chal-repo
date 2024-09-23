@@ -1,0 +1,21 @@
+name: "Welcome to Fall CTF"
+author: SIGPwny
+category: Welcome
+description: |-
+  Welcome to Fall CTF 2024! We hope you enjoy the event!
+
+  Here is a flag to get you started: `fallctf{2024_pwnygotchi}`
+
+  **author**: SIGPwny
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{2024_pwnygotchi}
+hints: []
+files: []

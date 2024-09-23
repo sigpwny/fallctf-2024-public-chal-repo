@@ -1,0 +1,230 @@
+[
+  {
+    "flight_number": "FL122",
+    "to": "New York",
+    "from": "Los Angeles",
+    "details": "Non-stop flight, duration 5h 30m."
+  },
+  {
+    "flight_number": "FL123",
+    "to": "Chicago",
+    "from": "New York",
+    "details": "1 stop in Denver, total duration 7h."
+  },
+  {
+    "flight_number": "FL125",
+    "to": "Miami",
+    "from": "Dallas",
+    "details": "Direct flight, duration 2h 45m."
+  },
+  {
+    "flight_number": "FL126",
+    "to": "San Francisco",
+    "from": "Seattle",
+    "details": "Non-stop flight, duration 2h."
+  },
+  {
+    "flight_number": "FL127",
+    "to": "Las Vegas",
+    "from": "Phoenix",
+    "details": "Non-stop flight, duration 1h 30m."
+  },
+  {
+    "flight_number": "FL128",
+    "to": "Boston",
+    "from": "Atlanta",
+    "details": "1 stop in Charlotte, total duration 4h 20m."
+  },
+  {
+    "flight_number": "FL129",
+    "to": "Toronto",
+    "from": "Chicago",
+    "details": "Direct flight, duration 1h 50m."
+  },
+  {
+    "flight_number": "FL130",
+    "to": "Orlando",
+    "from": "Houston",
+    "details": "Non-stop flight, duration 1h 55m."
+  },
+  {
+    "flight_number": "FL131",
+    "to": "Denver",
+    "from": "Los Angeles",
+    "details": "Direct flight, duration 2h 10m."
+  },
+  {
+    "flight_number": "FL132",
+    "to": "Philadelphia",
+    "from": "Miami",
+    "details": "1 stop in Atlanta, total duration 3h 50m."
+  },
+  {
+    "flight_number": "FL133",
+    "to": "Seattle",
+    "from": "San Diego",
+    "details": "Direct flight, duration 2h 30m."
+  },
+  {
+    "flight_number": "FL134",
+    "to": "Atlanta",
+    "from": "Washington",
+    "details": "Non-stop flight, duration 1h 45m."
+  },
+  {
+    "flight_number": "FL135",
+    "to": "Dallas",
+    "from": "New York",
+    "details": "1 stop in Chicago, total duration 6h."
+  },
+  {
+    "flight_number": "FL136",
+    "to": "Phoenix",
+    "from": "San Francisco",
+    "details": "Direct flight, duration 1h 50m."
+  },
+  {
+    "flight_number": "FL137",
+    "to": "Houston",
+    "from": "Chicago",
+    "details": "Non-stop flight, duration 2h 30m."
+  },
+  {
+    "flight_number": "FL138",
+    "to": "Cleveland",
+    "from": "Boston",
+    "details": "1 stop in Detroit, total duration 4h."
+  },
+  {
+    "flight_number": "FL139",
+    "to": "Salt Lake City",
+    "from": "Los Angeles",
+    "details": "Direct flight, duration 1h 50m."
+  },
+  {
+    "flight_number": "FL140",
+    "to": "San Antonio",
+    "from": "Miami",
+    "details": "1 stop in Dallas, total duration 4h."
+  },
+  {
+    "flight_number": "FL141",
+    "to": "Detroit",
+    "from": "New York",
+    "details": "Non-stop flight, duration 1h 30m."
+  },
+  {
+    "flight_number": "FL142",
+    "to": "Tampa",
+    "from": "Orlando",
+    "details": "Direct flight, duration 1h."
+  },
+  {
+    "flight_number": "FL143",
+    "to": "Portland",
+    "from": "Seattle",
+    "details": "Non-stop flight, duration 1h."
+  },
+  {
+    "flight_number": "FL144",
+    "to": "Washington",
+    "from": "Atlanta",
+    "details": "1 stop in Charlotte, total duration 2h 50m."
+  },
+  {
+    "flight_number": "FL145",
+    "to": "Baltimore",
+    "from": "Philadelphia",
+    "details": "Direct flight, duration 1h."
+  },
+  {
+    "flight_number": "FL146",
+    "to": "Kansas City",
+    "from": "Dallas",
+    "details": "1 stop in St. Louis, total duration 3h."
+  },
+  {
+    "flight_number": "FL147",
+    "to": "Louisville",
+    "from": "Chicago",
+    "details": "Non-stop flight, duration 1h 15m."
+  },
+  {
+    "flight_number": "FL148",
+    "to": "Minneapolis",
+    "from": "Denver",
+    "details": "Direct flight, duration 1h 30m."
+  },
+  {
+    "flight_number": "FL149",
+    "to": "Nashville",
+    "from": "Atlanta",
+    "details": "Non-stop flight, duration 1h."
+  },
+  {
+    "flight_number": "FL150",
+    "to": "Indianapolis",
+    "from": "Chicago",
+    "details": "1 stop in Detroit, total duration 3h."
+  },
+  {
+    "flight_number": "FL151",
+    "to": "Charlotte",
+    "from": "New York",
+    "details": "Direct flight, duration 1h 40m."
+  },
+  {
+    "flight_number": "FL152",
+    "to": "Raleigh",
+    "from": "Miami",
+    "details": "1 stop in Atlanta, total duration 3h 30m."
+  },
+  {
+    "flight_number": "FL153",
+    "to": "San Diego",
+    "from": "Phoenix",
+    "details": "Non-stop flight, duration 1h 10m."
+  },
+  {
+    "flight_number": "FL154",
+    "to": "Austin",
+    "from": "Dallas",
+    "details": "Direct flight, duration 1h."
+  },
+  {
+    "flight_number": "FL155",
+    "to": "Fort Lauderdale",
+    "from": "Orlando",
+    "details": "Non-stop flight, duration 1h."
+  },
+  {
+    "flight_number": "FL156",
+    "to": "San Jose",
+    "from": "Seattle",
+    "details": "1 stop in San Francisco, total duration 3h."
+  },
+  {
+    "flight_number": "FL157",
+    "to": "New Orleans",
+    "from": "Houston",
+    "details": "Non-stop flight, duration 1h 15m."
+  },
+  {
+    "flight_number": "FL158",
+    "to": "Cincinnati",
+    "from": "Chicago",
+    "details": "Direct flight, duration 1h 10m."
+  },
+  {
+    "flight_number": "FL159",
+    "to": "Oklahoma City",
+    "from": "Dallas",
+    "details": "1 stop in Austin, total duration 3h."
+  },
+  {
+    "flight_number": "FL160",
+    "to": "Birmingham",
+    "from": "Atlanta",
+    "details": "Non-stop flight, duration 1h."
+  }
+]

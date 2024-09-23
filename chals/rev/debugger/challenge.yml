@@ -1,0 +1,20 @@
+name: "Debugger"
+author: Ronan
+category: Rev
+description: |-
+  I bet you can't read my AES encrypted flag! If only there was some way to read the flag when it was decrypted...
+
+  **author**: Ronan
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{breakpoints_break_my_brain}
+
+files:
+  - debugger

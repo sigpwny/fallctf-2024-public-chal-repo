@@ -1,0 +1,23 @@
+name: "Strength in Numbers"
+author: Anakin
+category: Crypto
+description: |-
+  RSA seems to only rely on factoring into 2 numbers... I wonder if I can make it stronger with 10
+
+  **author**: Anakin
+value: 500
+type: dynamic
+tags: 
+  - medium
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{more_is_not_more}
+files:
+  - chal.py
+  - output.py
+  - starter.py
+hints:
+  - Those factors seem kinda small. Is there a way we can attack a modulus with many small prime factors?

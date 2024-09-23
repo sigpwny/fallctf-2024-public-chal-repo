@@ -1,0 +1,27 @@
+name: "Photography II: Tumbling down the rabbit hole"
+author: Sophia
+category: OSINT
+description: |-
+  Thanks for helping me figure out who the photographer of that awesome picture is! 
+  I wonder what kind of camera they use and how long they have been using it? 
+  Maybe they have information about that somewhere online...
+
+  Note: 'Photography I: Anonymous???' should be completed prior to attempting this challenge.
+  
+  Flag format: fallctf{Camera name, Year bought}
+  ex: fallctf{Nikon D5200, 1999}
+
+  **author**: Sophia
+value: 500
+type: dynamic
+hints:
+  - "Look into [Sherlock](https://sherlockproject.xyz/installation) to find matching usernames."
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{FujiFilm X100, 2013}
+files: []

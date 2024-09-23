@@ -1,0 +1,14 @@
+{
+  "name": "enron-feedback",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "puppeteer": "^23.4.0"
+  }
+}

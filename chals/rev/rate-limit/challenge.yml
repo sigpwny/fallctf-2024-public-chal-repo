@@ -1,0 +1,26 @@
+name: "Rate Limit"
+author: Juniper
+category: Rev
+description: |-
+  The machine I'm running on is suuuper slow, so I limited its speed to avoid overloading the CPU.
+
+  `nc chal.fallctf.com 7000`
+
+  Note: flag format matches `fallctf{\d+}`
+
+  **author**: Juniper
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{76876159}
+hints:
+  - https://regex101.com/r/igyK2B/1
+  - Can you use the delay to your advantage?
+files:
+  - chal.py

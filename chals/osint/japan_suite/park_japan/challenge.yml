@@ -1,0 +1,37 @@
+name: "park, japan"
+author: Henry
+category: OSINT
+description: |-
+  <img src="https://i.kym-cdn.com/photos/images/newsfeed/002/018/640/c6e.jpg" alt="place, japan">
+
+  Parks are nice and quiet in Japan. Well, except for this one in which you will be bothered by a bunch of jerks.
+  
+  To make this challenge not trivial though, you not only need to find the park, but also need to find the *place of interest* directly *south* of where I took this photo.
+  
+  In this photo, I am facing *south-west*, and this road is pointing *west*.
+  
+  *Place of interest* is the purple or green icons you can click on, on Google Maps.
+
+  flag format: fallctf{name of the place from Google Maps in English, Park name}
+  
+  example: fallctf{Sannomaru Shozokan, Imperial Palace East National Gardens}
+  
+  If you go to Imperial Palace East National Gardens, it shows up as a park in Google Maps, but you can also find Sannomaru Shozokan being a icon you can click within this garden.
+
+
+  **author**: Henry
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+
+tags:
+  - medium
+flags:
+  - fallctf{Manyo Botanical Gardens, Nara Park}
+
+files:
+  - chal.jpg

@@ -1,0 +1,22 @@
+name: Hi-fi
+author: Richard
+category: Misc
+description: |-
+  Can you play my hi-fi audio?
+
+  **author**: Richard
+value: 500
+type: dynamic
+hints:
+  - This is not a steganography challenge. You only need to play back the given audio file.
+  - You may find the WAVE file format specification helpful http://soundfile.sapp.org/doc/WaveFormat/
+extra:
+  initial: 500
+  decay: 100
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{38536793}
+files:
+  - chal.wav.gz

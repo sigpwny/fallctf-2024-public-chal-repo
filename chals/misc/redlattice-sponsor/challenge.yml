@@ -1,0 +1,19 @@
+name: "REDLattice Sponsor Flag"
+author: SIGPwny
+category: Welcome
+description: |-
+  Talk to Chris from REDLattice to get the flag!
+
+  **author**: SIGPwny
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{finding_bugs_within_the_lattice}
+hints: []
+files: []

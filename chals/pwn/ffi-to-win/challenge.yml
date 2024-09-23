@@ -1,0 +1,26 @@
+name: "FFI To Win"
+author: Cameron
+category: Pwn
+description: |-
+  "Any application that can be written in JavaScript, will eventually be written in JavaScript" 
+    -Jeff Atwood
+
+  You should be able to solve this challenge without running it locally or installing bun.
+
+  `nc chal.fallctf.com 5080`
+
+  **author**: Cameron Asher
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{who_knew_about_c_functions_in_typescript_c1456cae}
+
+files:
+  - src/lib.ts
+  - src/index.ts

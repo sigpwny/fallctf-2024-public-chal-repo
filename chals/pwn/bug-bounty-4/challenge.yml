@@ -1,0 +1,29 @@
+name: "Bug Bounty 4"
+author: Akhil
+category: Pwn
+description: |-
+  Time to get serious. No more printing the flag for free.
+
+  Bug bounty: The rest of our money.
+  
+  `nc chal.fallctf.com 5005`
+
+  **author**: Akhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{we_print_our_own_flags_here}
+hints:
+  - The stack is executable! Can you use that to your advantage somehow?
+  - Maybe some [shellcode](https://www.exploit-db.com/exploits/46907) will help you out.
+  - pwntools [asm()](https://docs.pwntools.com/en/stable/asm.html) function
+files:
+  - challenge.c
+  - challenge
+  - Makefile

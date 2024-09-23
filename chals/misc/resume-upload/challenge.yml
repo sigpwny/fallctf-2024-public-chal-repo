@@ -1,0 +1,19 @@
+name: "Resume Upload"
+author: SIGPwny
+category: Welcome
+description: |-
+  [Upload your resume here to get the flag](https://forms.gle/3YWy3hTAWvHQMG5k9).
+
+  **author**: SIGPwny
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{potentially_not_unemployed}
+hints: []
+files: []

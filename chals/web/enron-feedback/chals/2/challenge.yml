@@ -1,0 +1,32 @@
+name: "Enron Feedback 2"
+author: Jake
+category: Web
+description: |-
+  Enron's accounting department is very interested in the public's feedback (not really.) When you submit your feedback an admin will dutifully review your feedback.
+
+  The admin has a bit of special "accounting" info on their page. Can you find a way to get it?
+
+  **Tip**: All of the flags are prefixed with the corresponding challenge number (e.g., `fallctf{2_flag}`)
+
+  Check out our [Web Hacking II](https://sigpwny.com/meetings/general/2024-09-15/) meeting for some useful info!
+
+  **Update**: Added a new hint
+
+  https://enron-feedback.chal.fallctf.com/
+
+  **author**: Jake
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+hints:
+  - Try using [webhook.site](https://webhook.site) to setup a webserver to exfiltrate data
+  - Try to send the contents of the webpage to your webhook.
+  - Be careful that the page loads before we send off the body
+  - Make sure to add CORS headers so the admin's browser can call your endpoint. See [XSS guide](https://fallctf.com/guide-2024/web/web#cross-site-scripting-xss) for more details.
+flags:
+  - fallctf{2_st34ling_th3_p4ge}

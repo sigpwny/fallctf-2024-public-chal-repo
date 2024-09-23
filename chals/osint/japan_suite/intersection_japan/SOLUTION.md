@@ -1,0 +1,1 @@
+From the expressway signs we can see K1 and K2, and the intersection of that is in Yokohama city center. From there we can find this very wide road next to the expressway, and then go to Google Maps to find the flag.

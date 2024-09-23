@@ -1,0 +1,26 @@
+name: "Caesar Salad"
+author: Sagnik
+category: Crypto
+description: |-
+  Can you find the secret sauce? I hid it with this amazing salad.
+
+  Flag is of the format fallctf{secret message},
+  where the secret message should be contained in the decrypted text 
+
+
+  **author**: Sagnik 
+value: 500
+type: dynamic
+tags: 
+  - beginner
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{this_salad_tastes_great}
+files:
+  - salad.txt
+hints:
+  - This is a classic [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher)
+  - Check out [Cyber Chef](https://gchq.github.io/CyberChef/) for a helpful tool!

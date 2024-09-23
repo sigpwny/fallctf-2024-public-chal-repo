@@ -1,0 +1,24 @@
+name: "Flag Generator"
+author: Pete
+category: Rev
+description: |-
+  Just created my own flag generator in python! Just run it to get the flag!
+
+  ...find how to get the flag.
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{catatonically_slow_calculation}
+hints:
+  - Is this a common algorithm?
+  - You could look up the first couple numbers in the sequence on OEIS.
+files:
+  - ./magic.py

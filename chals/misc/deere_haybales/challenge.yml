@@ -1,0 +1,16 @@
+name: "Badge 1 - Haybales"
+author: Richard
+category: Misc
+description: |-
+  Can you reverse the hidden flag in the Deere Game?
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+flags:
+  - sigpwny{m1cr0py7h0n_1s_c0ol}

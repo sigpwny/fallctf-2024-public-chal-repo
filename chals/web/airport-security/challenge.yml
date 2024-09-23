@@ -1,0 +1,22 @@
+name: "Airport Security"
+author: Cameron
+category: Web
+description: |-
+  I take at least 8 flights a year and I still hate going through security. Wait you weren't talking about that kind of security?
+
+  https://airport-security.chal.fallctf.com
+
+  **author**: Cameron Asher
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+files:
+  - handout/admin_panel.ts
+  - handout/login.ts
+flags:
+  - fallctf{google_tsa_sql_injection_2024}

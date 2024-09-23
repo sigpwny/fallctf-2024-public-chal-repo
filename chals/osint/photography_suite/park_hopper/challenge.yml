@@ -1,0 +1,32 @@
+name: "Photography III: Park Hopper"
+author: Sophia
+category: OSINT
+description: |-
+  I am inspired to get into photography now!
+  I found some pictures online that were all taken at different National Parks, but I don't know which ones.
+  I want to visit all of these National Parks so I can practice taking photos in them - can you help me identify the names of them? 
+
+  Note: This challenge does not rely on the completion of the Photography I or Photography II challenges.
+  
+  Flag format: fallctf{Park #1 name, park #2 name, park #3 name, park #4 name, park #5 name}
+  ex: fallctf{Badlands, Acadia, Great Smoky Mountains, Zion, Arches}
+
+  **author**: Sophia
+value: 500
+type: dynamic
+hints:
+  - Do the landscapes in these pictures have any noticeable/distinguishing features?
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{Glacier, Mount Rainier, Olympic, Yosemite, Yellowstone}
+files:
+  - photo1.jpg
+  - photo2.jpg
+  - photo3.jpg
+  - photo4.png
+  - photo5.jpg

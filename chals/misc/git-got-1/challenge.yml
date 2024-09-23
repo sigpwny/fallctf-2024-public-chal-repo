@@ -1,0 +1,22 @@
+name: Git Got 1
+author: George
+category: Misc
+description: |-
+  My pal Benny had to get rid of all the flags in his repo... but did he do a good job?
+
+  **author**: George
+value: 500
+type: dynamic
+hints:
+  - You don't need anything besides Git to solve these challenges, and they can be solved in any order.
+  - For there is nothing lost, that may be found, if sought.
+extra:
+  initial: 500
+  decay: 100
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{r3fl06_my_b3l0v3d}
+files:
+  - bennys-site.tar.gz

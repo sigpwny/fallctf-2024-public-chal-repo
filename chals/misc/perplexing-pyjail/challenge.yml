@@ -1,0 +1,27 @@
+name: "Perplexing Pyjail"
+author: Cameron
+category: Misc
+description: |-
+  Flag is at /flag.txt
+
+  `nc chal.fallctf.com 8000`
+
+  **author**: Cameron
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{python_is_really_weird_sometimes_1710e579}
+hints:
+  - Understanding co_names is vital to solving this challenge.
+  - co_names is a list that stores the names of global/local variables and attributes that are referenced in the python code.
+  - co_names does not store constants, such as strings ('hello world') and numbers (2).
+  - Every item in co_names is unique, if a name appears twice (or more) in a piece of code, it is only added to co_names the first time it appears.
+  - For example, the code `print('hello world'); foo.bar(2); print('done')` produces the co_names `("print", "foo", "bar")`.
+files:
+  - chal.py

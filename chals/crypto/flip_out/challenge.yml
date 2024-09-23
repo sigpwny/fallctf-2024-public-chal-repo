@@ -1,0 +1,26 @@
+name: "Flip Out"
+author: Sagnik
+category: Crypto
+description: |-
+  Welcome to Sigpwny. I made this so hard, that if you're able to solve this problem, you must be an admin...
+  ...right?
+
+  `nc chal.fallctf.com 6000`
+
+  **author**: Sagnik
+value: 500
+type: dynamic
+tags: 
+  - medium
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{a3s_CBC_g0t_m3_fl1pp1n_oU7}
+files:
+  - chal.py
+hints:
+  - The IV seems to be the first block of the token. What does a change in the IV do to the next block?
+  - See [bit flipping](https://book.hacktricks.xyz/crypto-and-stego/cipher-block-chaining-cbc-mac-priv)
+  - See [AES encryption](https://derekwill.com/wp-content/uploads/2020/12/CBC_encryption.svg_.png) and [AES decryption](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CBC_decryption.svg/601px-CBC_decryption.svg.png) diagrams.

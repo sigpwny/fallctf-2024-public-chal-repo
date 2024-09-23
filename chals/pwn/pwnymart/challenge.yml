@@ -1,0 +1,24 @@
+name: "PwnyMart"
+author: Nikhil
+category: Pwn
+description: |-
+  Welcome to PwnyMart, the most secure online grocery store in existence. 
+
+  `nc chal.fallctf.com 5001`
+
+  **author**: Nikhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{fun_w17h_func710n_p01n73r5}
+
+files:
+  - challenge.c
+  - challenge
+  - README.md

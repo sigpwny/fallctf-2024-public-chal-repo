@@ -1,0 +1,25 @@
+name: "Hidden Cats"
+author: Alejandra
+category: Misc
+description: |-
+  Several kittens have messed with a broken png and have hidden a flag in it. 
+  The file provided has something called [Magic Numbers](https://gist.github.com/leommoore/f9e57ba2aa4bf197ebc5), use [CyberChef](https://gchq.github.io/CyberChef/) to fix the image and find the flag.
+
+  **author**: Alejandra :3
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{br0kenpng}
+hints:
+  - Look at the *name* (not file type) of the document provided, it might give you a hint on what the current format is!
+  - The flag is not in the metadata of the image, it is in the image itself
+  - You only need to fix the first 4 hexes of the image to see the flag
+  - Are you sure you rendered the image once you fixed the hex? There is a render function in CyberChef!
+files:
+  - cats_hex.txt

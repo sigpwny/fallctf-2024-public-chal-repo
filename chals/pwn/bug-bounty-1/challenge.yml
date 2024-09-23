@@ -1,0 +1,32 @@
+name: "Bug Bounty 1"
+author: Akhil
+category: Pwn
+description: |-
+  Huzzah, what a historic day! 
+  An unpaid staff engineer at SUPERMEGACORP believes they've written the very first C program without any critical vulnerabilities.
+  What a time to be alive!
+
+  SUPERMEGACORP has offered a $500 bug bounty if anyone can prove them wrong...
+
+  (the CEO has already fled the country with the company's assets, so the bounty is coming out of the janitor's pension fund) 
+
+  `nc chal.fallctf.com 5002`
+
+  **author**: Akhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{lol_we_dont_give_our_janitors_pensions}
+hints:
+  - What does the `gets()` function do?
+  - What happens if you input more characters than `name` can hold?
+files:
+  - challenge.c
+  - challenge
+  - Makefile

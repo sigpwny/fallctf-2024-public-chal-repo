@@ -1,0 +1,20 @@
+name: "I love AI"
+author: Henry
+category: Rev
+description: |-
+  I made a simple AI program that validates your flag. Surely the more AI library the better right?
+
+  **author**: Henry
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{I_wanna_be_an_ai_engineer}
+
+files:
+  - chal.pyc

@@ -1,0 +1,25 @@
+name: "Stolen Pumpkin"
+author: abbyobrad
+category: OSINT
+description: |-
+  A nearby orchard's prized pumpkin was stolen by a mysterious villain. Their owners @weloveprincepumpkin posted on Instagram to call for help! Can you figure out where they've hidden it?
+  
+  Flag format: fallctf{AdjectiveBuilding}
+  ex: fallctf{GraingerLibrary}
+
+  **author**: abbyobrad
+value: 500
+type: dynamic
+hints:
+  - What other platforms use hashtags? (UPDATE - If nothing shows up, check to see if your settings "hide sensitive content")
+  - Curtis Orchard is lovely this time of year. 
+  - Google Maps is a good way to see what's nearby. 
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{SesquicentennialBarn}
+files: []

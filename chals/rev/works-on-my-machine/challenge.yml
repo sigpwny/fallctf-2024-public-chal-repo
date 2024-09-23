@@ -1,0 +1,26 @@
+name: "'works on my machine'"
+author: Pete
+category: Rev
+description: |-
+  My coworker sent me a file he needs me to run. "works on my machine" he said.
+  Bro mentioned that he compiled it on an IBM mainframe 💀
+
+  **Note**: On non-linux devices, you should use `Dockerfile-release` to solve this challenge.
+
+  **author**: Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{lemme_borrow_ur_mainframe_real_quick}
+hints:
+  - qemu and qemu-user sound useful
+files:
+  - works-on-my-machine
+  - Dockerfile-release
+  - Makefile

@@ -1,0 +1,25 @@
+name: "XORcise"
+author: Sagnik
+category: Crypto
+description: |-
+  Byte by byte, let's learn more crypto
+
+  Can you decrypt the flag from `xor.txt`
+  
+  **author**: Sagnik
+value: 500
+type: dynamic
+tags: 
+  - beginner
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{simple_xor}
+files:
+  - starter.py
+  - xor.py
+  - xor.txt
+hints:
+  - Woah! That is a small key. Surely we can brute force it?

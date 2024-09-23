@@ -1,0 +1,19 @@
+name: "UIUC Tech Services Sponsor Flag"
+author: SIGPwny
+category: Welcome
+description: |-
+  Talk to Tech Services to get the flag!
+
+  **author**: SIGPwny
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{so_thats_who_runs_the_internet}
+hints: []
+files: []

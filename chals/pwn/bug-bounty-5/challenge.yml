@@ -1,0 +1,29 @@
+name: "Bug Bounty 5"
+author: Akhil
+category: Pwn
+description: |-
+  Is this even worth it anymore...
+
+  Bug bounty: $0.01
+  
+  `nc chal.fallctf.com 5006`
+
+  **author**: Akhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - hard
+flags:
+  - fallctf{i_shoulda_used_rust_instead}
+hints:
+  - Stack addresses may be randomized, but their relative positions are not (i.e. two variables on the stack will always be a fixed distance apart).
+  - Can you leak a stack address somehow, and use it to calculate the address of an array on the stack?
+  - This uses a [format string vulnerability](https://book.hacktricks.xyz/binary-exploitation/format-strings). Read the pwn guides!
+files:
+  - challenge.c
+  - challenge
+  - Makefile

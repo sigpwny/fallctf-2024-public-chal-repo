@@ -1,0 +1,1 @@
+This is Nara Park in Japan. You can find a road through the park in the west-east direction. Go through the park on Google Maps to find the spot.

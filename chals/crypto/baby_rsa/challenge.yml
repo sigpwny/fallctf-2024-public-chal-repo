@@ -1,0 +1,21 @@
+name: "Baby RSA"
+author: Sagnik
+category: Crypto
+description: |-
+  RSA-1024, RSA-2048, RSA-4096 exist. How about RSA-64?
+
+  **author**: Sagnik 
+value: 500
+type: dynamic
+tags: 
+  - easy
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{small_n_bad}
+files:
+  - rsa.txt
+hints:
+  - Keep in mind RSA normally works on 1024 bit integers at the minimum. This n is much smaller than that. Can we brute force the primes?

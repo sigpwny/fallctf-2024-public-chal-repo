@@ -1,0 +1,33 @@
+name: "Sorry, that password is taken"
+author: Cameron & Pete
+category: Web
+description: |-
+  I wonder what it's like to be an *admin* of a popular page.
+  It must suck to have everyone try and steal your *password*.
+
+  **DO NOT ENTER ANY OF YOUR REAL PASSWORDS INTO THE SITE**
+
+  https://password-is-taken.chal.fallctf.com
+
+  ```
+  import requests
+
+  remote = "https://password-is-taken.chal.fallctf.com"
+
+  response = requests.get(remote)
+  print(response.text)
+  ```
+
+  **author**: Cameron & Pete
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{never_reuse_passwords}
+files:
+  - app/prisma/seed.ts

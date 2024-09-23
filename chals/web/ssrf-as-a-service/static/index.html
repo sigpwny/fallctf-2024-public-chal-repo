@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSRF-as-a-service</title>
+  <script>
+    function runScreenshot() {
+      fetch('/screenshot', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          url: document.getElementById('input').value
+        }),
+      })
+        .then((response) => response.blob())
+        .then((blob) => {
+          const imageUrl = URL.createObjectURL(blob);
+          document.getElementById('screenshot').src = imageUrl;
+        })
+    }
+  </script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div>
+    <input id="input" type="text" name="prompt" placeholder="https://sigpwny.com">
+    <button onclick="runScreenshot()">Screenshot it!</button>
+  </div>
+  <pre><img id="screenshot"></img></pre>
+</body>
+</html>

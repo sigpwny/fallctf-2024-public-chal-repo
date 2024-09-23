@@ -1,0 +1,8 @@
+# If you can't use qemu, maybe this Dockerfile can help...
+FROM s390x/ubuntu
+
+RUN apt update
+COPY ??? /
+
+# docker build -t works -f Dockerfile-release .
+# docker run -it works /bin/bash

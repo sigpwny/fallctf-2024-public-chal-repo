@@ -1,0 +1,32 @@
+name: "Curveball"
+author: Sagnik
+category: Crypto
+description: |-
+  Hi there Bob! Let's say you wanted to send a handshake to Alice. You choose a curve
+  `y^2 = (x^3 + ax + b) mod p` and generator point `G(G_x, G_y)`. 
+  
+  Now Alice was going to send you her public point Q_a, but it seems that the transmission glitched, and 
+  you only got her x coordinate, `Q_a_x`. Can you still get your shared secret?
+
+  **Note**: The actual shared secret for the decryptor would be the SHA-256 hash of the x coordinate of the shared secret.
+  So that would be `sha256(S_x)`
+
+  **Note**: There is two shared secrets you can arrive at, only one of them will work.
+
+  **author**: Sagnik
+value: 500
+type: dynamic
+tags: 
+  - hard
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+flags:
+  - fallctf{n0t_s0_s3cr3t_anYm0r3}
+files:
+  - decryptor.py
+  - client.json
+hints:
+  - See [ECDH](https://cryptobook.nakov.com/asymmetric-key-ciphers/ecdh-key-exchange) for more info about the protocol.
+  - Is it possible to get back Alice's y coordinate?

@@ -1,0 +1,30 @@
+name: "bridge, japan"
+author: Henry
+category: OSINT
+description: |-
+  <img src="https://i.kym-cdn.com/photos/images/newsfeed/002/018/640/c6e.jpg" alt="place, japan">
+
+  Seriously though, that is a nice bridge. That's why I took this photo.
+  Can you find the bridge that I was standing on?
+
+  flag format: fallctf{name of the bridge from wikipedia in English, city}
+  
+  example: fallctf{Rainbow Bridge, Tokyo}
+
+
+  **author**: Henry
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+
+tags:
+  - easy
+flags:
+  - fallctf{Shichijo Bridge, Kyoto}
+
+files:
+  - chal.jpg

@@ -1,0 +1,28 @@
+services:
+  password-is-taken-db:
+    container_name: password-is-taken-db
+    image: postgres
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    env_file:
+      - ./app/.env
+    # ports:
+    #   - "5432:5432"
+
+  password-is-taken:
+    container_name: password-is-taken
+    build: ./app
+    ports:
+      - "1337"
+    depends_on:
+      - password-is-taken-db
+    labels:
+      - "traefik.enable=true" # enable Traefik
+      - "traefik.http.routers.password-is-taken.rule=Host(`password-is-taken.chal.fallctf.com`)" # password-is-taken.chal.fallctf.com
+      - "traefik.http.services.password-is-taken.loadbalancer.server.port=1337" # connect to port 1337 of this service
+      - "traefik.http.routers.password-is-taken.entrypoints=websecure"
+      - "traefik.http.routers.password-is-taken.tls.certresolver=myresolver"
+
+volumes:
+  db_data:

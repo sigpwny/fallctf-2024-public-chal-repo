@@ -1,0 +1,28 @@
+name: "Path to Success (Again)"
+author: Louis
+category: Web
+description: |-
+  My cat only wants the hoomans to view cat images, nothing else.
+  Flag is now in text at the path "/flag.txt".
+
+  https://path-to-success-again.chal.fallctf.com
+
+  **author**: Louis
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - medium
+flags:
+  - fallctf{paths_to_success_are_rooted_in_cats_:)}
+hints:
+  - Download the app.py file attached below (this is what is running on the server). How is the path getting filtered?
+  - Read the Python docs on the relevant path functions.
+files:
+  - challenge/app.py
+  - challenge/Dockerfile
+  - challenge/requirements.txt
+  - challenge/compose.yml

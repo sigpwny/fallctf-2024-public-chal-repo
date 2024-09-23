@@ -1,0 +1,22 @@
+name: Git Got 2
+author: George
+category: Misc
+description: |-
+  My pal Benny had to get rid of all the flags in his repo... but did he do a good job?
+
+  (see Git Got 1 for handout)
+
+  **author**: George
+value: 500
+type: dynamic
+hints:
+  - You don't need anything besides Git to solve these challenges, and they can be solved in any order.
+  - GitHub actions are pretty cool; did you know Git has actions built-in?
+extra:
+  initial: 500
+  decay: 100
+  minimum: 100
+tags:
+  - easy
+flags:
+  - fallctf{h00k_l1n3_4nd_51nk3r}

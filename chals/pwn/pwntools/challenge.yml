@@ -1,0 +1,26 @@
+name: "pwntools"
+author: Akhil
+category: Pwn
+description: |-
+  Can you send the correct password? Look at the challenge.c, starter.py, or the pwn guides for help!
+
+  `nc chal.fallctf.com 5000`
+
+  **author**: Akhil
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{pwntools_for_the_win}
+hints:
+  - if you want to send the string "\x01\x23\x45\x67" with pwntools, you can use `conn.sendline(b"\x01\x23\x45\x67")` (`conn.send()` also works if you don't want to append a newline)
+files:
+  - challenge.c
+  - challenge
+  - Makefile
+  - starter.py

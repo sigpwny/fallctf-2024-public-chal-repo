@@ -1,0 +1,1 @@
+1. you change 98 05 32 87 .... to the magic numbers png 89 50 4e 47 0d 0a 1a 0a and render the image using the render function in cyberchef to reveal the flag in the image.

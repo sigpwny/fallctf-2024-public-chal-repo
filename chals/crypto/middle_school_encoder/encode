@@ -1,0 +1,202 @@
+#!/usr/bin/env python3
+import itertools
+sentence = input("what is the message to encrypt  > ")
+mode = input("p = preset, a = easy, b = medium, c = hard > ")
+if mode == 'p':
+    pre = input("a = 1-26, z = 26-1 > ")
+    if pre == "z":
+        a_ = 26
+        b_ = 25
+        c_ = 24
+        d_ = 23
+        e_ =22
+        f_=21
+        g_=20
+        h_=19
+        i_=18
+        j_=17
+        k_=16
+        l_=15
+        m_=14
+        n_=13
+        o_=12
+        p_=11
+        q_=10
+        r_=9
+        s_=8
+        t_=7
+        u_=6
+        v_=5
+        w_=4
+        x_=3
+        y_=2
+        z_=1
+
+    elif pre == "a":
+        a_ = 1
+        b_ = 2
+        c_ = 3
+        d_ = 4
+        e_ =5
+        f_=6
+        g_=7
+        h_=8
+        i_=9
+        j_=10
+        k_=11
+        l_=12
+        m_=13
+        n_=14
+        o_=15
+        p_=16
+        q_=17
+        r_=18
+        s_=19
+        t_=20
+        u_=21
+        v_=22
+        w_=23
+        x_=24
+        y_=25
+        z_=26
+elif mode == "a":
+    a_ = int(input("Enter numbers 1-6, use each number once. Put each number\n on one line. 1st > "))
+    b_ = int(a_ + 1)
+    c_ = int(a_ + 2)
+    d_ = int(a_ + 3)
+    e_ = int(input(" > "))
+    f_ = int(e_ + 1)
+    g_ = int(e_ + 2)
+    h_ = int(e_ + 3)
+    i_ = int(e_ + 4)
+    j_ = int(input(" > "))
+    k_ = int(j_ + 1)
+    l_ = int(j_ + 2)
+    m_ = int(j_ + 3)
+    n_ = int(input(" > "))
+    o_ = int(n_ + 1)
+    p_ = int(n_ + 2)
+    q_ = int(n_ + 3)
+    r_ = int(n_ + 4) 
+    s_ = int(input(" > "))
+    t_ = int(s_ + 1)
+    u_ = int(s_ + 2)
+    v_ = int(s_ + 3)
+    w_ = int(input(" > "))
+    x_ = int(w_ + 1)
+    y_ = int(w_ + 2)
+    z_ = int(w_ + 3)
+elif mode == "b":
+    a_ = int(input("Enter numbers 1-13, use each number once. Put one number\n on each line. 1st > "))
+    b_ = int(a_ + 1)
+    c_ = int(input('> '))
+    d_ = int(c_ + 1)
+    e_ = int(input('> '))
+    f_ = int(e_ + 1)
+    g_ = int(input('> '))
+    h_ = int(g_ + 1)
+    i_ = int(input('> '))
+    j_ = int(i_ + 1)
+    k_ = int(input('> '))
+    l_ = int(k_ + 1)
+    m_ = int(input('> '))
+    n_ = int(m_ + 1)
+    o_ = int(input('> '))
+    p_ = int(o_ + 1)
+    q_ = int(input('> '))
+    r_ = int(q_ + 1)
+    s_ = int(input('> '))
+    t_ = int(s_ + 1)
+    u_ = int(input('> '))
+    v_ = int(u_ + 1)
+    w_ = int(input('> '))
+    x_ = int(w_ + 1)
+    y_ = int(input('> '))
+    z_ = int(y_ + 1)
+elif mode == "c":
+    a_ = int(input("Enter numbers 1-26, use each number once. \nPut one number on each line. 1st > "))
+    b_ = int(input(" > "))
+    c_ = int(input(" > "))
+    d_ = int(input(" > "))
+    e_ = int(input(" > "))
+    f_ = int(input(" > "))
+    g_ = int(input(" > "))
+    h_ = int(input(" > "))
+    i_ = int(input(" > "))
+    j_ = int(input(" > "))
+    k_ = int(input(" > "))
+    l_ = int(input(" > "))
+    m_ = int(input(" > "))
+    n_ = int(input(" > "))
+    o_ = int(input(" > "))
+    p_ = int(input(" > "))
+    q_ = int(input(" > "))
+    r_ = int(input(" > "))
+    s_ = int(input(" > "))
+    t_ = int(input(" > "))
+    u_ = int(input(" > "))
+    v_ = int(input(" > "))
+    w_ = int(input(" > "))
+    x_ = int(input(" > "))
+    y_ = int(input(" > "))
+    z_ = int(input(" > "))
+alphabet = "-abcdefghijklmnopqrstuvwxyz"
+
+a = alphabet[a_]
+b = alphabet[b_]
+c = alphabet[c_]
+d = alphabet[d_]
+e = alphabet[e_]
+f = alphabet[f_]
+g = alphabet[g_]
+h = alphabet[h_]
+i = alphabet[i_]
+j = alphabet[j_]
+k = alphabet[k_]
+l = alphabet[l_]
+m = alphabet[m_]
+n = alphabet[n_]
+o = alphabet[o_]
+p = alphabet[p_]
+q = alphabet[q_]
+r = alphabet[r_]
+s = alphabet[s_]
+t = alphabet[t_]
+u = alphabet[u_]
+v = alphabet[v_]
+w = alphabet[w_]
+x = alphabet[x_]
+y = alphabet[y_]
+z = alphabet[z_]
+encode_data = {
+    #aJs`1*/C$RIm!H wMdt~&9b#)]D;i:[KhP?VLvT6GqB8Njpu(ey%3}oQA.FW>lx=zX-@U0<_^|5r2Z{OkYf+4{n7gSE,"
+    a: itertools.cycle(['a', 'J', 's']),
+    b: itertools.cycle(['`', '1', '*']),
+    c: itertools.cycle(['/', 'C', '$']),
+    d: itertools.cycle(['R', 'I', 'm']),
+    e: itertools.cycle(['!', 'H', ' ']),
+    f: itertools.cycle(['M', 'd', 't']),
+    g: itertools.cycle(['~', '&', '9']),
+    h: itertools.cycle(['b', '#', ')']),
+    i: itertools.cycle([']', 'D', ';']),
+    j: itertools.cycle(['i', ':', '[']),
+    k: itertools.cycle(['K', 'h', 'P']),
+    l: itertools.cycle(['?', 'V', 'L']),
+    m: itertools.cycle(['v', 'T', '6']),
+    n: itertools.cycle(['G', 'q', 'B']),
+    o: itertools.cycle(['8', 'N', 'j']),
+    p: itertools.cycle(['p', 'u', '(']),
+    q: itertools.cycle(['e', 'y', '%']),
+    r: itertools.cycle(['}', 'o', 'Q']),
+    s: itertools.cycle(['A', '.', 'F']),
+    t: itertools.cycle(['W', '>', 'l']),
+    u: itertools.cycle(['x', '=', 'z']),
+    v: itertools.cycle(['X', '-', '@']),
+    w: itertools.cycle(['U', '0', '<']),
+    x: itertools.cycle(['_', '^', '|']),
+    y:itertools.cycle(['5','r','2']),
+    z: itertools.cycle(['Z', '{', 'O']),
+    ' ': itertools.cycle(['k', 'Y', 'f','+','4','{','n','7','g','S','E',','])
+}
+output = ''.join(next(encode_data[x]) for x in sentence)
+print(output)

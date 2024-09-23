@@ -1,0 +1,26 @@
+name: "Photography I: Anonymous???"
+author: Sophia
+category: OSINT
+description: |-
+  Check out this amazing picture that I found! I want to know who the author is but I can't find their name. :(
+  Can you please help me figure out their name so I can check out some of their other work?
+
+  Flag format: fallctf{First name, Last name}
+  ex: fallctf{John, Doe}
+
+  **author**: Sophia
+value: 500
+type: dynamic
+hints:
+  - Look into methods that allow you to extract information from photos.
+  - What format is the Author's name in?
+extra:
+  initial: 500
+  decay: 150
+  minimum: 100
+tags:
+  - beginner
+flags:
+  - fallctf{Sigge, Pohneigh}
+files:
+  - chal.jpg
